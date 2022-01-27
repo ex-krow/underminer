@@ -1,5 +1,6 @@
 import season
 
+
 class League:
     seasons: list[season.Season]
 

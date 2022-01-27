@@ -1,6 +1,8 @@
-class Fixture:
-    home_team: str
-    away_team: str
+import datetime
+
+
+
+class MatchReport:
     possession: tuple[float, float]
     shots: tuple[int, int]
     shots_on_target: tuple[float, float]
@@ -19,3 +21,18 @@ class Fixture:
     goal_kicks: tuple[int, int]
     throw_ins:  tuple[int, int]
     long_balls: tuple[int, int]
+
+class Fixture:
+    round: int
+    date: datetime.date
+    time: datetime.time
+    home_team: str
+    expected_home_goals: float
+    scores: tuple[int, int]
+    away_team: str
+    expected_away_goals: float
+    attendance: int
+    venue: str
+    referee: str
+    report: MatchReport
+    
