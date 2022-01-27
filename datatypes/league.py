@@ -15,7 +15,9 @@ class LeagueTable:
     points: int
     expected_goals_scored: float
     expected_goals_conceded: float
-    expected_goal_goal_difference: float
-    expected_goal_goal_difference_per_match: float
+    expected_goal_difference: float
+    expected_goal_difference_per_match: float
+    attendance_per_game: int
+
 
 
